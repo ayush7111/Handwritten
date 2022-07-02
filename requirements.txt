@@ -7,7 +7,7 @@ joblib==1.0.1
 sklearn==0.0
 opencv-python==4.6.0.66
 tensorflow==2.9.0
-Pillow==1.1.6
+Pillow==2.1.1
 Flask==2.1.2
 GitPython==3.1.27
 Jinja2==3.1.2
