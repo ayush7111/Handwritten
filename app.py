@@ -7,8 +7,8 @@ from PIL import Image
 import cv2
 import os
 import numpy as np
-import matplotlib.pyplot as plt
-import glob
+#import matplotlib.pyplot as plt
+#import glob
 
 from keras.models import load_model
 
