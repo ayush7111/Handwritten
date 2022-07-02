@@ -2,7 +2,7 @@ pip==21.3.1
 wheel==0.37.1
 altair==4.2.0
 plotly==5.3.1
-numpy==1.20.2
+numpy==1.22.4
 streamlit==1.9.2
 joblib==1.0.1
 sklearn==0.0
