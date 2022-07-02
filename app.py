@@ -60,7 +60,7 @@ with st.expander("See explanation"):
         * 80% Data is used for Training and 20 % Data is used of Testing purpose
      """)
 #loading the saved model
-model = load_model("/Users/rahul/PycharmProjects/texttoimage/data/text_model.h5")
+model = load_model("./data/text_model.h5")
 
 st.subheader('')
 st.subheader('')
