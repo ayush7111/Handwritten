@@ -5,6 +5,7 @@ import cv2
 import string
 import numpy as np
 import pandas as pd
+import pickle
 from PIL import Image
 import streamlit as st
 from pandas import read_csv
@@ -58,7 +59,7 @@ with st.expander("See explanation"):
      """)
 
 #loading the saved model
-model = load_model("./data/model.pkl")
+model = pickle.load(open("./data/model.pkl",rb))
 
 st.subheader('')
 st.subheader('')
