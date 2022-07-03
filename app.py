@@ -33,13 +33,13 @@ col1, mid, col2 = st.columns([1,8,25])
 with col1:
     st.image('data/logo.jpeg', width=150)
 with col2:
-    st.title('Handwritten Character Recognition')
+    st.title('Detection of Hindi Language Handwritten Characters')
 
 #--> creating a block which can expand to give more info
 with st.expander("About The Project"):
      st.write("""
          This Project (web app) is designed to recognize the alphabets from images of handwritten alphabets.
-         Algorithm Used - CNN
+         Algorithm Used - Logistic Regression
          * This Project is Scalable ( as generated model can be reused )
          * Modular in approach
          * Code is Easy to read and Understand
@@ -53,12 +53,10 @@ st.subheader('Dataset-: ')
 #--> including explation of the dataset using expander
 with st.expander("See explanation"):
      st.write("""
-         The dataset used for this project is A-Z Handwritten Dataset from NIST taken from kaggle.
-         * It Has-
-            - 372450 Rows
-            - 785 Columns 
+         The dataset used for this project is Devanagari Handwritten Dataset. 
         * 80% Data is used for Training and 20 % Data is used of Testing purpose
      """)
+
 #loading the saved model
 model = load_model("./data/model.pkl")
 
