@@ -40,7 +40,7 @@ with col2:
 with st.expander("About The Project"):
      st.write("""
          This Project (web app) is designed to recognize the alphabets from images of handwritten alphabets.
-         Algorithm Used - Logistic Regression
+         Algorithm Used - Convolution Neural Network ( CNN )
          * This Project is Scalable ( as generated model can be reused )
          * Modular in approach
          * Code is Easy to read and Understand
