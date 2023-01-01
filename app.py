@@ -14,6 +14,11 @@ from keras.models import load_model
 #--> Setting Page Layout
 st.set_page_config(layout="wide")
 
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
+
+
 st.markdown("""
 <style>
 .big-font {
@@ -60,6 +65,11 @@ with st.expander("See explanation"):
 
 #loading the saved model
 model = load_model("./data/text_model.h5")
+
+col1, col2, col3 = st.columns(3)
+col1.metric("Temperature", "70 °F", "1.2 °F")
+col2.metric("Wind", "9 mph", "-8%")
+col3.metric("Humidity", "86%", "4%")
 
 st.subheader('')
 st.subheader('')
