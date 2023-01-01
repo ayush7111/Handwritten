@@ -76,11 +76,6 @@ col1, col2 = st.columns(2)
 col1.metric(label="Training Accuracy", value="99.4%")
 col2.metric(label="Validation Accuracy", value="99.15%")
 
-col1, col2, col3 = st.columns(3)
-col1.metric(value="Characters to be Recognised", label="26")
-col2.metric(value="Training Accuracy", delta="99.4%")
-col3.metric(value="Validation Accuracy", delta="99.15%")
-
 st.subheader('')
 st.subheader('')
 
