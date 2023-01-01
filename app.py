@@ -72,8 +72,8 @@ st.subheader('')
 st.subheader('Accuracy')
 #metrics of model
 col1, col2 = st.columns(2)
-col1.metric(label="Accuracy", value="of model")
-col2.metric(label="Training Accuracy", value="99.4%")
+col1.metric(label="Training Accuracy", value="99.4%")
+col2.metric(label="Validation Accuracy", value="99.15%")
 
 
 st.subheader('')
