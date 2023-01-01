@@ -73,7 +73,7 @@ st.subheader('')
 col1, col2, col3 = st.columns(3)
 col1.metric(label="Character can be Recognised", value="26")
 col2.metric(label="Training Accuracy", delta="99.4%")
-col3.metric(label="Validation Accuracy, delta="99.15%")
+col3.metric(label="Validation Accuracy", delta="99.15%")
 
 st.subheader('')
 st.subheader('')
