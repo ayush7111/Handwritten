@@ -75,6 +75,11 @@ col1.metric(value="Characters to be Recognised", label="26")
 col2.metric(label="Accuracy of Training the model", value="Training Accuracy", delta="99.4%")
 col3.metric(label="Accuracy of Validating(testing) the model", value="Validation Accuracy", delta="99.15%")
 
+col1, col2, col3 = st.columns(3)
+col1.metric(value="Characters to be Recognised", label="26")
+col2.metric(value="Training Accuracy", delta="99.4%")
+col3.metric(value="Validation Accuracy", delta="99.15%")
+
 st.subheader('')
 st.subheader('')
 
