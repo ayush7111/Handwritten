@@ -59,7 +59,7 @@ with st.expander("See explanation"):
      """)
 
 #loading the saved model
-model = pickle.load(open("./data/model.pkl",rb))
+model = load_model("./data/text_model.h5")
 
 st.subheader('')
 st.subheader('')
