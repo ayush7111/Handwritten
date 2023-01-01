@@ -88,7 +88,7 @@ if uploaded_file is not None:
      gray = np.reshape(gray, (28, 28))
 
     #--> Displayong Result
-     pred = decode[np.argmax(model.predict(np.reshape(gray, (1, 28, 28, 1))))]
+     pred = alpha_dict[np.argmax(model.predict(np.reshape(gray, (1, 28, 28, 1))))]
      st.subheader('')
      st.markdown('<p class="big-font">Predicted as  - ></p>', unsafe_allow_html=True)
      st.write(pred)
