@@ -73,10 +73,10 @@ if uploaded_file is not None:
      with open(os.path.join("./data/test", uploaded_file.name), "wb") as f:
          f.write(uploaded_file.getbuffer())
      image = Image.open(uploaded_file)
-     st.image(image, caption='Input Image', width=200)
+     st.image(image, caption='Input Image')
      img_path = os.path.join("./data/test", uploaded_file.name)
      img_array =cv2.imread(img_path)
-     decode={0:'ka' ,1:'kha' ,2:'ga',3:'gha',4:'kna',5:'cha' }
+     alpha_dict = {0:'A',1:'B',2:'C',3:'D',4:'E',5:'F',6:'G',7:'H',8:'I',9:'J',10:'K',11:'L',12:'M',13:'N',14:'O',15:'P',16:'Q',17:'R',18:'S',19:'T',20:'U',21:'V',22:'W',23:'X', 24:'Y',25:'Z'}
      gray = cv2.cvtColor(img_array, cv2.COLOR_BGR2GRAY)
      gray = cv2.medianBlur(gray, 5)
      ret, gray = cv2.threshold(gray, 75, 180, cv2.THRESH_BINARY)
@@ -88,7 +88,7 @@ if uploaded_file is not None:
      gray = np.reshape(gray, (32, 32))
 
     #--> Displayong Result
-     pred = decode[np.argmax(model.predict(np.reshape(gray, (1, 28, 28, 1))))]
+     pred = decode[np.argmax(model.predict(np.reshape(gray, (1, 32, 32, 1))))]
      st.subheader('')
      st.markdown('<p class="big-font">Predicted as  - ></p>', unsafe_allow_html=True)
      st.write(pred)
