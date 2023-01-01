@@ -1,5 +1,3 @@
-[theme]
-base='light'
 #--> importing required libraries
 
 import os
