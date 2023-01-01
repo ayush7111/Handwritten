@@ -34,7 +34,7 @@ col1, mid, col2 = st.columns([1,8,25])
 with col1:
     st.image('data/logo.jpeg', width=150)
 with col2:
-    st.title('Detection of Hindi Language Handwritten Characters')
+    st.title('Handwritten Character Recognition')
 
 #--> creating a block which can expand to give more info
 with st.expander("About The Project"):
