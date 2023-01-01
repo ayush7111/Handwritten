@@ -66,10 +66,14 @@ with st.expander("See explanation"):
 #loading the saved model
 model = load_model("./data/text_model.h5")
 
+st.subheader('')
+st.subheader('')
+
+#metrics of model
 col1, col2, col3 = st.columns(3)
-col1.metric("Temperature", "70 °F", "1.2 °F")
-col2.metric("Wind", "9 mph", "-8%")
-col3.metric("Humidity", "86%", "4%")
+col1.metric("Character can be Recognised", "26","")
+col2.metric("Training Accuracy", "", "99.4%")
+col3.metric("Validation Accuracy,"", "99.15%")
 
 st.subheader('')
 st.subheader('')
