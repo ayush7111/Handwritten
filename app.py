@@ -83,12 +83,12 @@ if uploaded_file is not None:
      element = cv2.getStructuringElement(cv2.MORPH_RECT, (90, 90))
      gray = cv2.morphologyEx(gray, cv2.MORPH_GRADIENT, element)
      gray = gray / 255.  # downsampling
-     gray = cv2.resize(gray, (32, 32))  # resizing
+     gray = cv2.resize(gray, (28, 28))  # resizing
      # reshaping the image
-     gray = np.reshape(gray, (32, 32))
+     gray = np.reshape(gray, (28, 28))
 
     #--> Displayong Result
-     pred = decode[np.argmax(model.predict(np.reshape(gray, (1, 32, 32, 1))))]
+     pred = decode[np.argmax(model.predict(np.reshape(gray, (1, 28, 28, 1))))]
      st.subheader('')
      st.markdown('<p class="big-font">Predicted as  - ></p>', unsafe_allow_html=True)
      st.write(pred)
