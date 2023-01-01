@@ -69,6 +69,7 @@ model = load_model("./data/text_model.h5")
 st.subheader('')
 st.subheader('')
 
+st.subheader('Accuracy')
 #metrics of model
 col1, col2 = st.columns(2)
 col1.metric(label="Accuracy", value="of model")
